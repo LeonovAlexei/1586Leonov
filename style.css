@@ -2,17 +2,20 @@
   margin: 0;
   padding: 0;
 }
+img {
+max-width: 100%;
+}
 body{
   font-family: 'Montserrat', sans-serif;
 }
 .center{
-    padding-left: calc(50% - 608px);
-    padding-right: calc(50% - 608px);
+    padding-left: calc(50% - 640px);
+    padding-right: calc(50% - 640px);
 }
 .header{
   background: rgba(174, 35, 31, 0.8);
   padding-top:  21px;
-  padding-bottom: 20px;
+  padding-bottom: 21px;
   display: flex;
   gap: 62px;
 }
@@ -29,7 +32,7 @@ body{
   padding-bottom: 0px;
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 35px;
@@ -74,12 +77,11 @@ body{
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  padding-top: 250px;
+  padding-bottom: 250px ;
   gap: 118px;
 }
-.about__info{
-  margin-top: 395px;
-  margin-bottom: 468px;
-  }
+
 .heading{
   font-style: italic;
   font-weight: bold;
@@ -147,4 +149,69 @@ body{
   justify-content: center;
   align-items: center;
   gap: 30px;
+}
+@media (max-width: 1024px) {
+/* Стили для планшета */
+.center{
+  padding-left: calc(50% - 368px);
+  padding-right: calc(50% - 368px);
+}
+.header{
+justify-content: center;
+}
+.top{
+  gap: 60px;
+}
+.top__info{
+  align-items: center;
+  order: 2;
+  margin: 0px;
+  padding-bottom: 48px;
+}
+.top__img{
+  order: 1;
+}
+.contacts_content{
+  align-items: center;
+}
+.about{
+background: none;
+display: block;
+padding-top: 0px;
+padding-bottom: 0px;
+}
+.about__info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.title, .top__info_p, .about__info_p, .heading{
+  text-align: center;
+}
+
+.about__img{
+  background: linear-gradient(
+    to right, #AE231F calc(85% - 42%) , #FFFFFF calc(85% - 42%));
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.games{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.games_content {
+  gap: 70px;
+}
+.contacts {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+
 }
