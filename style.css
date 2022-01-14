@@ -193,7 +193,7 @@ padding-bottom: 0px;
 
 .about__img{
   background: linear-gradient(
-    to right, #AE231F calc(85% - 42%) , #FFFFFF calc(85% - 42%));
+    to right, #AE231F 61% , #FFFFFF 61%);
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
